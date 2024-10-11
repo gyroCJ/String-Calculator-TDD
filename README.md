@@ -15,10 +15,10 @@ This project implements a String Calculator using the principles of Test-Driven 
 
 You can use a code editor like Visual Studio Code
 
-1. Clone the repository using the Git
+1. Clone the repository using Git
 2. Open the repository
-3. Open the terminal and run the command - npm install
+3. Open the terminal and run the command - npm install <br/>
    This command will install all the necessary dependencies in a directory called node_modules to run the project.
 4. Now go inside the src directory using the terminal by the command - cd src
-5. On the terminal, run the command - npm test
+5. On the terminal, run the command - npm test <br/>
    This command will run all the tests specified in the file app.test.js in the test directory.
