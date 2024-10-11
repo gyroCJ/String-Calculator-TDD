@@ -25,4 +25,18 @@ describe("String Calculator", () => {
   it("should support different kinds of delimiters when specified at the start of the string", () => {
     assert.strictEqual(addStringNumbers("//;\n1;2"), 3);
   });
+
+  it("should throw an exception for negative numbers", () => {
+    assert.throws(
+      () => addStringNumbers("1,-2,3"),
+      /negative numbers not allowed -2/
+    );
+  });
+
+  it("should throw an exception listing all negative numbers", () => {
+    assert.throws(
+      () => addStringNumbers("1,-2,-3"),
+      /negative numbers not allowed -2,-3/
+    );
+  });
 });
