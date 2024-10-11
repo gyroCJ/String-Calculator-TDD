@@ -17,4 +17,12 @@ describe("String Calculator", () => {
   it("should return the sum of multiple comma-separated numbers", () => {
     assert.strictEqual(addStringNumbers("1,2,3,4,5"), 15);
   });
+
+  it("should handle new lines operator between numbers as delimiters", () => {
+    assert.strictEqual(addStringNumbers("1\n2,3"), 6);
+  });
+
+  it("should support different kinds of delimiters when specified at the start of the string", () => {
+    assert.strictEqual(addStringNumbers("//;\n1;2"), 3);
+  });
 });
